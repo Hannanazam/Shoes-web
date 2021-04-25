@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0,0,0,0.2);
+    background: url(images/shoe-3.png), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+    color: #fff;
+}
+.section h1{
+    font-size: 4.5em;
+    line-height: 1em;
+    margin-top: 130px;
+}
+.section p{
+    margin-top: 30px;
+    font-weight: 600;
+}
+.section .button,.button a{
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #ff9f00;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.section .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.section .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.section .button:hover span {
+    color: #fff;
+    padding-right: 25px;
+  }
+  
+.section .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  @media (max-width: 765px){
+    .section{
+      padding: 0px !important;
+      padding-top: 10px !important;
+  }
+  .section h1 {
+      font-size: 2.5em;
+      line-height: 1.2em;
+      width: 80%;
+      margin: 0px auto;
+      margin-top: 100px;
+      text-align: center;
+  }
+  .section p {
+      font-size: 1em;
+      line-height: 1.5em;
+      font-weight: 300;
+      width: 80%;
+      margin: 0px auto;
+      margin-top: 40px;
+      text-align: center;
+  }
+  .section .button, .button a {
+      margin-top: 20px;
+      border-radius: 4px;
+      background-color: #ff9f00;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 10px;
+      width: 300px;
+      transition: all 0.5s;
+      cursor: pointer;
+  }
+  }
+  
+  
+
+
+
+
+.section1{
+    background: #DCDCDC;
+    padding-top: 100px;
+}
+.headingname{
+    text-align: center;
+    font-size: 4em;
+    color: #2F4F4F;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+.cards{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0px auto;
+    cursor: pointer;
+}
+.cards .card1:nth-child(1){
+    background-color: #50A6C2;
+    width: 250px;
+    height: 250px;
+    margin: 100px 0px;
+    border-radius:50%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2) inset;
+}
+.cards .card1:nth-child(2){
+    background-color: #50A6C2;
+    width: 250px;
+    height: 250px;
+    margin: 100px 0px;
+    border-radius:50%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2) inset;
+}
+.cards .card1:nth-child(3){
+    background-color: #50A6C2;
+     width: 250px;
+    height: 250px;
+    margin: 100px 0px;
+    border-radius:50%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2) inset;
+}
+.cards .card1 img{
+    width: 110%;
+    height: 90%;
+    cursor: pointer;
+}
+.cards .card1 img:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+.cards .card1 p{
+    font-size: 2em;
+    font-weight: 700;
+    color: #111;
+    text-align: center;
+    visibility: hidden;
+}
+.cards .card1 .name{
+    font-size: 1em;
+    font-weight: 300;
+    color: #111;
+    text-align: center;
+}
+.cards .card1:hover p{
+    visibility: visible;
+    transition: all 1s;
+}
+
+@media (max-width:765px){
+  .cards{
+    margin: 0px 50px !important;
+}
+}
+
+.section2{
+    padding-top: 200px;
+}
+
+
+.bigcards{
+    cursor: pointer;
+    margin-top:100px;
+    
+}
+.bigcards .bcard1:nth-child(1){
+    background-color: #ff9f00;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2) inset;
+    margin: 100px auto;
+    width: 75%;
+    padding: 30px;
+}
+.bigcards .bcard1:nth-child(2){
+    background-color: #F5DA89;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2) inset;
+    margin: 100px auto;
+    width: 75%;
+    padding: 30px;
+}
+.bigcards .bcard1:nth-child(3){
+    background-color: #50A6C2;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2) inset;
+    margin: 100px auto;
+    width: 75%;
+    padding: 30px;
+}
+.bigcards .bcard1:nth-child(4){
+    background-color: #e34234;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2) inset;
+    margin: 100px auto;
+    width: 75%;
+    padding: 30px;
+}
+.bigcards .bcard1:nth-child(1) img{
+    margin-left:40%;
+    width: 600px;
+    height: 450px;
+}
+.bigcards .bcard1:nth-child(2) img{
+    margin-left: -50px;
+    width: 600px;
+    height: 450px;
+}
+.bigcards .bcard1:nth-child(3) img{
+    margin-left:40%;
+    width: 600px;
+    height: 450px;
+}
+.bigcards .bcard1:nth-child(4) img{
+    margin-left: -50px;
+    width: 600px;
+    height: 450px;
+    transform: scaleX(-1);
+}
+.bigcards .bcard1:nth-child(1) h1{
+    font-size: 5em;
+    width: 30%;
+    position: absolute;
+    text-align: left;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1.2em;
+    margin: 10px 30px;
+    text-shadow: 5px 5px 50px rgb(224, 224, 224);
+}
+.bigcards .bcard1:nth-child(1) p{
+    position: absolute;
+    width: 30%;
+    text-align: left;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-top: 330px;
+    margin-left: 30px;
+    text-shadow: 5px 5px 50px rgb(224, 224, 224);
+}
+
+.bigcards .bcard1:nth-child(1) .button {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 30px;
+    border-radius: 4px;
+    background-color: #A1173c;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+ 
+
+.bigcards .bcard1:nth-child(3) h1{
+    font-size: 5em;
+    width: 30%;
+    position: absolute;
+    text-align: left;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1.2em;
+    margin: 10px 30px;
+    text-shadow: 5px 5px 50px rgb(224, 224, 224);
+}
+.bigcards .bcard1:nth-child(3) p{
+    position: absolute;
+    width: 30%;
+    text-align: left;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-top: 330px;
+    margin-left: 30px;
+    text-shadow: 5px 5px 50px rgb(224, 224, 224);
+}
+
+.bigcards .bcard1  .button {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 30px;
+    border-radius: 4px;
+    background-color: #008951;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+
+.bigcards .bcard1:nth-child(2) h1{
+    font-size: 5em;
+    width: 30%;
+    position: absolute;
+    text-align: left;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1.2em;
+    margin-top:10px;
+    margin-left: 550px;
+    text-shadow: 5px 5px 50px rgb(224, 224, 224);
+}
+.bigcards .bcard1:nth-child(2) p{
+    position: absolute;
+    width: 30%;
+    text-align: left;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-top: 330px;
+    margin-left: 550px;
+    text-shadow: 5px 5px 50px rgb(224, 224, 224);
+}
+
+.bigcards .bcard1:nth-child(2)  .button {
+    position: absolute;
+    margin-top: 420px;
+    margin-left:550px;
+    border-radius: 4px;
+    background-color: #2f4858;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+
+
+.bigcards .bcard1:nth-child(4) h1{
+    font-size: 5em;
+    width: 30%;
+    position: absolute;
+    text-align: left;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1.2em;
+    margin-top:10px;
+    margin-left: 550px;
+    text-shadow: 5px 5px 50px rgb(224, 224, 224);
+}
+.bigcards .bcard1:nth-child(4) p{
+    position: absolute;
+    width: 30%;
+    text-align: left;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-top: 330px;
+    margin-left: 550px;
+    text-shadow: 5px 5px 50px rgb(224, 224, 224);
+}
+
+.bigcards .bcard1:nth-child(4)  .button {
+    position: absolute;
+    margin-top: 420px;
+    margin-left:550px;
+    border-radius: 4px;
+    background-color: #2f4858;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.bigcards .bcard1  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .bigcards .bcard1  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .bigcards .bcard1 .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .bigcards .bcard1 .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+@media (max-width:992px){
+    .section1 .cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 90%;
+        margin: 0px auto;
+        cursor: pointer;
+    }
+    .bigcards .bcard1:nth-child(1) h1 {
+        font-size: 3.8em;
+    }
+    .bigcards .bcard1:nth-child(1) p {
+        margin-top: 230px;
+    }
+    .bigcards .bcard1:nth-child(1) .button {
+        margin-top: 340px;
+    }
+    .bigcards .bcard1:nth-child(1) img {
+        width: 500px;
+        height: 400px;
+    }
+    .bigcards .bcard1:nth-child(2) h1 {
+        font-size: 3.8em;
+        margin-left: 400px;
+    }.bigcards .bcard1:nth-child(2) p {
+        margin-top: 240px;
+        margin-left: 400px;
+    }
+    .bigcards .bcard1:nth-child(2) .button {
+        margin-top: 340px;
+        margin-left: 400px;
+    }
+    .bigcards .bcard1:nth-child(2) img {
+        margin-left: -100px;
+        width: 500px;
+        height: 400px;
+    }
+    .bigcards .bcard1:nth-child(3) h1 {
+        font-size: 3.8em;
+    }
+    .bigcards .bcard1:nth-child(3) p {
+        margin-top: 230px;
+    }
+    .bigcards .bcard1:nth-child(3) .button {
+        margin-top: 340px;
+    }
+    .bigcards .bcard1:nth-child(3) img {
+        width: 500px;
+        height: 400px;
+    }
+    
+    .bigcards .bcard1:nth-child(4) h1 {
+        font-size: 3.8em;
+        margin-left: 400px;
+    }.bigcards .bcard1:nth-child(4) p {
+        margin-top: 240px;
+        margin-left: 400px;
+    }
+    .bigcards .bcard1:nth-child(4) .button {
+        margin-top: 340px;
+        margin-left: 400px;
+    }
+    .bigcards .bcard1:nth-child(4) img {
+        margin-left: -100px;
+        width: 500px;
+        height: 400px;
+    }
+    
+}
+
+
+@media (max-width:765px){
+
+.bigcards .bcard1:nth-child(1) img{
+    width: 230px;
+    height: 200px;
+    position: relative;
+    margin: 0px -20px;
+}
+.bigcards .bcard1:nth-child(1) h1{
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.3em;
+    margin: 0px auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.bigcards .bcard1:nth-child(1) p{
+    position: relative;
+    text-align: center;
+    font-size: 1em;
+    margin: 0px;
+    margin-top: 20px;
+    width: 100%;
+    color: #111;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.bigcards .bcard1:nth-child(1) .button{
+    position: relative;
+    margin: 20px 30px;
+}
+
+
+
+
+
+.bigcards .bcard1:nth-child(2) img{
+    width: 230px;
+    height: 200px;
+    position: relative;
+    margin: 0px -20px;
+}
+.bigcards .bcard1:nth-child(2) h1{
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.3em;
+    margin: 0px auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.bigcards .bcard1:nth-child(2) p{
+    position: relative;
+    text-align: center;
+    font-size: 1em;
+    margin: 0px;
+    margin-top: 20px;
+    width: 100%;
+    color: #111;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.bigcards .bcard1:nth-child(2) .button{
+    position: relative;
+    margin: 20px 30px;
+}
+
+
+
+.bigcards .bcard1:nth-child(3) img{
+    width: 230px;
+    height: 200px;
+    position: relative;
+    margin: 0px -20px;
+}
+.bigcards .bcard1:nth-child(3) h1{
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.3em;
+    margin: 0px auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.bigcards .bcard1:nth-child(3) p{
+    position: relative;
+    text-align: center;
+    font-size: 1em;
+    margin: 0px;
+    margin-top: 20px;
+    width: 100%;
+    color: #111;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.bigcards .bcard1:nth-child(3) .button{
+    position: relative;
+    margin: 20px 30px;
+}
+
+
+.bigcards .bcard1:nth-child(4) img{
+    width: 230px;
+    height: 200px;
+    position: relative;
+    margin: 0px -20px;
+}
+.bigcards .bcard1:nth-child(4) h1{
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.3em;
+    margin: 0px auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.bigcards .bcard1:nth-child(4) p{
+    position: relative;
+    text-align: center;
+    font-size: 1em;
+    margin: 0px;
+    margin-top: 20px;
+    width: 100%;
+    color: #111;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.bigcards .bcard1:nth-child(4) .button{
+    position: relative;
+    margin: 20px 30px;
+}
+.section2 .headingname{
+    font-size: 2.5em;
+    margin-top: -40px;
+}
+
+section h1{
+    font-size: 2.5em;
+    line-height: 1.2em;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 100px;
+    text-align: center;
+}
+section p{
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 300;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 40px;
+    text-align: center;
+}
+section{
+    padding: 10px;
+}
+.section1 .heading1 .headingname{
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.section1 .cards{
+    display: block;
+    padding-bottom: 20px;
+}
+.section1 .cards p{
+    visibility: visible;
+}
+}
+
+/* contact */
+
+  
+  #contact {
+    width: 100%;
+    /* background-color: #000; */
+    box-shadow: rgba(0,0,0,0.2);
+    background: url(images/shoe-7.jpg), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 150px;
+  }
+  
+  
+  #contact .contact-wrapper {
+    margin: 0 auto !important;
+    padding-top: 20px !important;
+    position: relative !important;
+    max-width: 800px !important;
+  }
+  
+  /* Begin Left Contact Page */
+  #contact .form-horizontal {
+    float: left !important;
+    max-width: 400px !important;
+    font-family: 'Lato' !important;
+    font-weight: 400 !important;
+  }
+  
+  #contact .form-control, textarea {
+      margin-top: 20px !important;
+    max-width: 340px !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    letter-spacing: 1px !important;
+  }
+  
+  #contact .send-button {
+    margin-top: 15px !important;
+    height: 40px !important;
+    width: 340px !important;
+    overflow: hidden !important;
+    transition: all .2s ease-in-out !important;
+  }
+  
+  #contact .button {
+    width: 400px !important;
+    transition: all .2s ease-in-out !important;
+  }
+  
+  #contact .send-text {
+    display: block !important;
+    margin-top: 10px !important;
+    margin-left: -100px !important;
+    font: 700 12px 'Lato', sans-serif !important;
+    letter-spacing: 2px !important;
+    color: #fff !important;
+    font-weight: 700;
+  }
+  #contact .fa-paper-plane{
+    margin-left: -100px !important;
+    color: #fff !important;
+    font-weight: 700;
+  }
+  
+  #contact .button:hover {
+    transform: translate3d(0px, -29px, 0px) !important;
+  }
+  
+  /* Begin Right Contact Page */
+  #contact .direct-contact-container {
+    max-width: 400px !important;
+    float: right !important;
+    margin-top: 5px !important;
+  }
+  
+  /* Location, Phone, Email Section */
+  #contact .contact-list {
+    list-style-type: none !important;
+    margin-left: -30px !important;
+    padding-right: 20px !important;
+  }
+  
+  #contact .list-item {
+    line-height: 4 !important;
+    color: #aaa !important;
+  }
+  
+  #contact .contact-text {
+    font: 300 18px 'Lato', sans-serif !important;
+    letter-spacing: 1.9px !important;
+    color: #bbb !important;
+  }
+  
+  #contact .place {
+    margin-left: 62px !important;
+  }
+  
+  #contact .phone {
+    margin-left: 56px !important;
+  }
+  
+  #contact .gmail {
+    margin-left: 53px !important;
+  }
+  
+  #contact .contact-text a {
+    color: #bbb !important;
+    text-decoration: none !important;
+    transition-duration: 0.2s !important;
+  }
+  
+  #contact .contact-text a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+  
+  
+  /* Social Media Icons */
+  #contact .social-media-list {
+    position: relative !important;
+    font-size: 2rem !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  
+  #contact .social-media-list li a {
+    color: #fff !important;
+  }
+  
+  #contact .social-media-list li {
+    position: relative !important; 
+    display: inline-block !important;
+    height: 60px !important;
+    width: 60px !important;
+    margin: 10px 3px !important;
+    line-height: 60px !important;
+    border-radius: 50% !important;
+    color: #fff !important;
+    background-color: rgb(27,27,27) !important;
+    cursor: pointer !important; 
+    transition: all .2s ease-in-out !important;
+  }
+  
+  #contact .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  #contact .social-media-list li:hover {
+    background-color: #fff !important;
+  }
+  
+  #contact .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  #contact .social-media-list li:hover a {
+    color: #000 !important;
+  }
+  
+  #contact .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  #contact hr {
+    border-color: rgba(255,255,255,.8); ;
+  }
+  
+  /* Begin Media Queries*/
+  @media screen and (max-width: 760px) {
+    #contact .direct-contact-container, .form-horizontal {
+      float: none;
+      margin: 10px auto;
+    }  
+    #contact .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+    }    
+    #contact .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    #contact .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 569px) {
+  
+    #contact .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }  
+    #contact .form-control, textarea {
+      max-width: 340px;
+      margin: 0 auto;
+    }
+    
+    #contact .name, .email, textarea {
+      width: 280px;
+    } 
+    
+    #contact .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }  
+    #contact .social-media-list {
+      left: 0;
+    }
+    #contact .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    #contact .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 410px) {
+    #contact .send-button {
+      width: 99%;
+    }
+  }
+
+
+/* contact */
